@@ -1,0 +1,77 @@
+﻿@model IEnumerable<M32COM_CW.Models.Event>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+<header>
+    <meta content="text/html"><meta />
+    <link href='~/calendar/core/main.css' rel='stylesheet' />
+    <link href='~/calendar/daygrid/main.css' rel='stylesheet' />
+    <script src='~/calendar/core/main.js'></script>
+    <script src='~/calendar/daygrid/main.js'></script>
+    <script src='~/calendar/interaction/main.js'></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            var dates = [];
+            var names = [];
+            var rightdate = [];
+            var ids = []
+            @foreach (Event eventM in Model)
+            {
+                @:dates.push("@eventM.EventStartDateTime");
+                @:names.push("@eventM.Name");
+                @:ids.push("@eventM.Id");
+            }
+            // Put the string of the date of the event in a YYYY-MM-DD HH:MM:SS format
+            dates.forEach(function (element)
+            {
+                var format = element;
+                var hours = element;
+                hours = hours.slice(11);
+                format = format.slice(0, 10);
+                format = [format.slice(-4), format.slice(3, 5), format.slice(0, 2)].join('-');
+                format = format +' '+ hours;
+                rightdate.push(format);
+            });
+            //Create list of events and fixes apostrophe encoding issue
+            var eventlist = [];
+            for (var i = 0; i < rightdate.length; i++) {
+                eventlist.push(
+                    {
+                        id: ids[i],
+                        title: names[i].replace('&#x27;', '\''),
+                        start: rightdate[i],
+                    });
+
+            }
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['dayGrid', 'interaction'],
+                selectable: true,
+                eventDisplay: function (info) {
+                var tooltip = new tooltip(info.el, {
+                        title: info.event.extendedProps.description,
+                        placement: 'top',
+                        trigger: 'hover',
+                        container: 'body'
+                    });
+
+                },
+                events: eventlist,
+
+                eventClick: function (info) {
+                    window.location.href = '/Events/Details/?id=' + info.event.id;
+                },
+            });
+
+            calendar.render();
+        });
+
+    </script>
+
+</header>
+<h2>Timetable</h2>
+<div id='calendar'></div>

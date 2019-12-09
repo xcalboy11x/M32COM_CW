@@ -1,0 +1,108 @@
+﻿@model M32COM_CW.Models.Event
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Events</h4>
+    <hr />
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DurationMinutes)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DurationMinutes)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EventStartDateTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EventStartDateTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Venue.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Venue.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Venue.AddressLine1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Venue.AddressLine1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Venue.Postcode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Venue.Postcode)
+        </dd>
+        <dt>
+            Entrants
+        </dt>
+        <dd>
+            @Model.Entries.Count
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Team Name</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Entry in Model.Entries)
+            {
+                <tr>
+                    <td><a asp-controller="Teams" asp-action="Details" asp-route-id="@Entry.TeamID">@Entry.Team.Name</a></td>
+                    <td>
+                        @if ((User.IsInRole("TeamManager") && Entry.Team.TeamLeaderId == ViewBag.CurrentMemberId) || User.IsInRole("Admin"))
+                        {
+                            <a asp-action="WithdrawFromEvent" asp-route-id="@Entry.ID">Withdraw</a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div>
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+        <a asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+    }
+    @if ((ViewBag.SignedUp == false) && (ViewBag.HasTeam == true))
+    {
+        <a asp-action="SignUpForEvent" asp-route-id="@Model.Id">Sign Up</a>
+    }
+    <a asp-action="Index">Back to List</a>
+</div>
+<img src="@Url.Action("GetImage", new { id = Model.Id })" alt="" height="600" />
+

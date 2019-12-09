@@ -1,0 +1,61 @@
+﻿@model IEnumerable<M32COM_CW.Models.Venue>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Events</h2>
+@if (User.IsInRole("Admin"))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Event Id</th>
+                <th>Event Name</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Venue Name</th>
+                <th>Venue Address</th>
+                <th>Duration (minutes)</th>
+                <th>Event Start Time</th>
+                <th>Teams Signed Up</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var venue in Model)
+            {
+                @foreach (var events in venue.Events)
+                {
+                    <tr>
+                        <td><a asp-controller="Events" asp-action="Details" asp-route-id="@events.Id">@events.Id</a></td>
+                        <td>@events.Name</td>
+                        <td>@events.Type</td>
+                        <td>@events.Description</td>
+                        <td><a asp-controller="Venues" asp-action="Details" asp-route-id="@venue.Id">@venue.Name</a></td>
+                        <td>@venue.AddressLine1</td>
+                        <td>@events.DurationMinutes</td>
+                        <td>@events.EventStartDateTime</td>
+                        <td>@events.Entries.Count()</td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@events.Id">Details</a>
+                            @if (User.IsInRole("Admin"))
+                            {
+                            <a asp-action="Edit" asp-route-id="@events.Id">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@events.Id">Delete</a>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+}
+
+

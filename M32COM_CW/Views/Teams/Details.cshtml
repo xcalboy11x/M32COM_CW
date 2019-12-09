@@ -1,0 +1,73 @@
+﻿@model M32COM_CW.Models.Team
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Team</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            Leader
+        </dt>
+        <dd>
+            @ViewBag.teamLeader
+        </dd>
+    </dl>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Forename</th>
+            <th>Surename</th>
+            <th>Role</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var member in Model.Members)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => member.Forename)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => member.Surname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => member.Role)
+                </td>
+                <td>
+                    <a asp-controller="Members" asp-action="Details" asp-route-id="@member.Id">Details</a>
+                    @if (User.IsInRole("Admin") || User.IsInRole("TeamManager"))
+                    {
+                    <a asp-controller="Members" asp-action="Edit" asp-route-id="@member.Id">Edit</a>
+                    @if (member.ApplicationUserId == null)
+                    {
+                    <a asp-controller="Members" asp-action="Delete" asp-route-id="@member.Id">Delete</a>
+                    }
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    @if (User.IsInRole("Admin") || User.IsInRole("TeamManager"))
+    {
+    <a asp-action="Delete" asp-route-id="@Model.ID">Delete</a>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a>
+    }
+    <a asp-action="Index">Back to List</a>
+</div>

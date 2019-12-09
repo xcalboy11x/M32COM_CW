@@ -1,0 +1,101 @@
+﻿@model IEnumerable<M32COM_CW.Models.Boat>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Boat</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TeamId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Team.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HullLength)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalLength)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Height)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Battery)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Charger)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transmitter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Motor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OnBoardElectronics)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Team.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <a asp-controller="Teams" asp-action="Details" asp-route-id="@item.Team.ID">@item.Team.ID</a>
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Team.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HullLength)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalLength)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Height)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Battery)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Charger)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Transmitter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Motor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OnBoardElectronics)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Team.Name)
+            </td>
+            <td>
+             @if (User.IsInRole("Admin") || User.IsInRole("TeamManager"))
+             {
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+             }
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

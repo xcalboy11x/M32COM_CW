@@ -1,0 +1,147 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20190310164233_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190310164233_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190310181436_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190310181436_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190310183202_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190310183202_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190310185442_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190310185442_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190310190122_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190310190122_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190310190750_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190310190750_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190311140810_UserDetailsUpdate.cs" />
+    <Compile Remove="Migrations\20190311140810_UserDetailsUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190311140913_UserDetailsUpdate.cs" />
+    <Compile Remove="Migrations\20190311140913_UserDetailsUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190312194529_EventModelUpdate.cs" />
+    <Compile Remove="Migrations\20190312194529_EventModelUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190312195643_AddingVenues.cs" />
+    <Compile Remove="Migrations\20190312195643_AddingVenues.Designer.cs" />
+    <Compile Remove="Migrations\20190313140956_AddEventFK.cs" />
+    <Compile Remove="Migrations\20190313140956_AddEventFK.Designer.cs" />
+    <Compile Remove="Migrations\20190313141410_AddEventFK.cs" />
+    <Compile Remove="Migrations\20190313141410_AddEventFK.Designer.cs" />
+    <Compile Remove="Migrations\20190313142912_AddEventFK.cs" />
+    <Compile Remove="Migrations\20190313142912_AddEventFK.Designer.cs" />
+    <Compile Remove="Migrations\20190313180741_VenueUpdate.cs" />
+    <Compile Remove="Migrations\20190313180741_VenueUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190313184118_EventsFKModification.cs" />
+    <Compile Remove="Migrations\20190313184118_EventsFKModification.Designer.cs" />
+    <Compile Remove="Migrations\20190313190808_EventsFKModification1.cs" />
+    <Compile Remove="Migrations\20190313190808_EventsFKModification1.Designer.cs" />
+    <Compile Remove="Migrations\20190313191442_test.cs" />
+    <Compile Remove="Migrations\20190313191442_test.Designer.cs" />
+    <Compile Remove="Migrations\20190314195504_EventDateTime.cs" />
+    <Compile Remove="Migrations\20190314195504_EventDateTime.Designer.cs" />
+    <Compile Remove="Migrations\20190315135432_test.cs" />
+    <Compile Remove="Migrations\20190315135432_test.Designer.cs" />
+    <Compile Remove="Migrations\20190315135604_MemberTeamUpdate.cs" />
+    <Compile Remove="Migrations\20190315135604_MemberTeamUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190315164010_TeamsUpdate.cs" />
+    <Compile Remove="Migrations\20190315164010_TeamsUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190315164114_TeamUpdate.cs" />
+    <Compile Remove="Migrations\20190315164114_TeamUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190315173512_test.cs" />
+    <Compile Remove="Migrations\20190315173512_test.Designer.cs" />
+    <Compile Remove="Migrations\20190315173740_test.cs" />
+    <Compile Remove="Migrations\20190315173740_test.Designer.cs" />
+    <Compile Remove="Migrations\20190315174108_test.cs" />
+    <Compile Remove="Migrations\20190315174108_test.Designer.cs" />
+    <Compile Remove="Migrations\20190315174342_test.cs" />
+    <Compile Remove="Migrations\20190315174342_test.Designer.cs" />
+    <Compile Remove="Migrations\20190315180301_test.cs" />
+    <Compile Remove="Migrations\20190315180301_test.Designer.cs" />
+    <Compile Remove="Migrations\20190315180400_test.cs" />
+    <Compile Remove="Migrations\20190315180400_test.Designer.cs" />
+    <Compile Remove="Migrations\20190315190032_test.cs" />
+    <Compile Remove="Migrations\20190315190032_test.Designer.cs" />
+    <Compile Remove="Migrations\20190315190226_test.cs" />
+    <Compile Remove="Migrations\20190315190226_test.Designer.cs" />
+    <Compile Remove="Migrations\20190316150808_MemberAppUserIdFK.cs" />
+    <Compile Remove="Migrations\20190316150808_MemberAppUserIdFK.Designer.cs" />
+    <Compile Remove="Migrations\20190316162008_test.cs" />
+    <Compile Remove="Migrations\20190316162008_test.Designer.cs" />
+    <Compile Remove="Migrations\20190316171847_test.cs" />
+    <Compile Remove="Migrations\20190316171847_test.Designer.cs" />
+    <Compile Remove="Migrations\20190316180922_test.cs" />
+    <Compile Remove="Migrations\20190316180922_test.Designer.cs" />
+    <Compile Remove="Migrations\20190316200929_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190316200929_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190317155137_TeamLeaderFK.cs" />
+    <Compile Remove="Migrations\20190317155137_TeamLeaderFK.Designer.cs" />
+    <Compile Remove="Migrations\20190317171138_test.cs" />
+    <Compile Remove="Migrations\20190317171138_test.Designer.cs" />
+    <Compile Remove="Migrations\20190317171247_test.cs" />
+    <Compile Remove="Migrations\20190317171247_test.Designer.cs" />
+    <Compile Remove="Migrations\20190317173140_test.cs" />
+    <Compile Remove="Migrations\20190317173140_test.Designer.cs" />
+    <Compile Remove="Migrations\20190317205318_EventDateTime.cs" />
+    <Compile Remove="Migrations\20190317205318_EventDateTime.Designer.cs" />
+    <Compile Remove="Migrations\20190318205314_AddingBoatsModel.cs" />
+    <Compile Remove="Migrations\20190318205314_AddingBoatsModel.Designer.cs" />
+    <Compile Remove="Migrations\20190318205637_AddingBoatsModel.cs" />
+    <Compile Remove="Migrations\20190318205637_AddingBoatsModel.Designer.cs" />
+    <Compile Remove="Migrations\20190319111838_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190319111838_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190319113232_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190319113232_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190319114659_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190319114659_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190319121316_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190319121316_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190319132021_InitialCreate.cs" />
+    <Compile Remove="Migrations\20190319132021_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20190321185037_BoatUpdate.cs" />
+    <Compile Remove="Migrations\20190321185037_BoatUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20190322071725_TeamDelete.cs" />
+    <Compile Remove="Migrations\20190322071725_TeamDelete.Designer.cs" />
+    <Compile Remove="Migrations\20190324185445_PromoImages.cs" />
+    <Compile Remove="Migrations\20190324185445_PromoImages.Designer.cs" />
+    <Compile Remove="Migrations\20191209203533_Init.cs" />
+    <Compile Remove="Migrations\20191209203533_Init.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="obj\Debug\netcoreapp2.0\M32COM_CW.AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp2.0\M32COM_CW.deps.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\M32COM_CW.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\M32COM_CW.runtimeconfig.json" />
+    <Content Include="obj\Debug\netcoreapp2.0\M32COM_CW.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CoreCompat.System.Drawing" Version="1.0.0-beta006" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="Views\Home\Index.cshtml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp2.0\M32COM_CW.dll" />
+    <None Include="bin\Debug\netcoreapp2.0\M32COM_CW.pdb" />
+    <None Include="obj\Debug\netcoreapp2.0\M32COM_CW.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\M32COM_CW.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\M32COM_CW.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\netcoreapp2.0\M32COM_CW.dll" />
+    <None Include="obj\Debug\netcoreapp2.0\M32COM_CW.pdb" />
+    <None Include="obj\M32COM_CW.csproj.nuget.cache" />
+    <None Include="obj\M32COM_CW.csproj.nuget.g.props" />
+    <None Include="obj\M32COM_CW.csproj.nuget.g.targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+</Project>

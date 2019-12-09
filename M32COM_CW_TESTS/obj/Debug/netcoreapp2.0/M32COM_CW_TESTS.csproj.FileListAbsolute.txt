@@ -1,0 +1,37 @@
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW_TESTS.dll
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.csproj.CoreCompileInputs.cache
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.AssemblyInfoInputs.cache
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.AssemblyInfo.cs
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW_TESTS.deps.json
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW_TESTS.runtimeconfig.json
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW_TESTS.runtimeconfig.dev.json
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW_TESTS.pdb
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW.dll
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW.pdb
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.csprojResolveAssemblyReference.cache
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.csproj.CopyComplete
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.dll
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.pdb
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\appsettings.Development.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\appsettings.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\bundleconfig.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW_TESTS.deps.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW_TESTS.runtimeconfig.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW_TESTS.runtimeconfig.dev.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW_TESTS.dll
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW_TESTS.pdb
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW.dll
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\bin\Debug\netcoreapp2.0\M32COM_CW.pdb
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.csprojAssemblyReference.cache
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.AssemblyInfoInputs.cache
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.AssemblyInfo.cs
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.csproj.CopyComplete
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.dll
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW_TESTS\obj\Debug\netcoreapp2.0\M32COM_CW_TESTS.pdb

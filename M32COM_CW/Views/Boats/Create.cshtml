@@ -1,0 +1,77 @@
+﻿@model M32COM_CW.Models.Boat
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Boat</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HullLength" class="control-label"></label>
+                <input asp-for="HullLength" class="form-control" />
+                <span asp-validation-for="HullLength" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalLength" class="control-label"></label>
+                <input asp-for="TotalLength" class="form-control" />
+                <span asp-validation-for="TotalLength" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Height" class="control-label"></label>
+                <input asp-for="Height" class="form-control" />
+                <span asp-validation-for="Height" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Battery" class="control-label"></label>
+                <input asp-for="Battery" class="form-control" />
+                <span asp-validation-for="Battery" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Charger" class="control-label"></label>
+                <input asp-for="Charger" class="form-control" />
+                <span asp-validation-for="Charger" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Transmitter" class="control-label"></label>
+                <input asp-for="Transmitter" class="form-control" />
+                <span asp-validation-for="Transmitter" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Motor" class="control-label"></label>
+                <input asp-for="Motor" class="form-control" />
+                <span asp-validation-for="Motor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OnBoardElectronics" class="control-label"></label>
+                <input asp-for="OnBoardElectronics" class="form-control" />
+                <span asp-validation-for="OnBoardElectronics" class="text-danger"></span>
+            </div>
+            @if (User.IsInRole("Admin"))
+            {
+            <div class="form-group">
+                <label asp-for="TeamId" class="control-label"></label>
+                <select asp-for="TeamId" class ="form-control" asp-items="ViewBag.TeamId"></select>
+            </div>
+            }
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

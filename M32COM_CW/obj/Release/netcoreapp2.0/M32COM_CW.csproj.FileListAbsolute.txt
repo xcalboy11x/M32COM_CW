@@ -1,0 +1,23 @@
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\M32COM_CW.deps.json
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\M32COM_CW.runtimeconfig.json
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\M32COM_CW.runtimeconfig.dev.json
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\M32COM_CW.dll
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\M32COM_CW.pdb
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW\obj\Release\netcoreapp2.0\M32COM_CW.csprojResolveAssemblyReference.cache
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW\obj\Release\netcoreapp2.0\M32COM_CW.csproj.CoreCompileInputs.cache
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW\obj\Release\netcoreapp2.0\M32COM_CW.dll
+H:\Semester 2\M32COM Internet Systems Development\Coursework\M32COM_CW\M32COM_CW\obj\Release\netcoreapp2.0\M32COM_CW.pdb
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\obj\Release\netcoreapp2.0\M32COM_CW.csprojAssemblyReference.cache
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\obj\Release\netcoreapp2.0\M32COM_CW.AssemblyInfoInputs.cache
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\obj\Release\netcoreapp2.0\M32COM_CW.AssemblyInfo.cs
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\obj\Release\netcoreapp2.0\M32COM_CW.dll
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\obj\Release\netcoreapp2.0\M32COM_CW.pdb
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\appsettings.Development.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\appsettings.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\bundleconfig.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\Properties\launchSettings.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\M32COM_CW.deps.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\M32COM_CW.runtimeconfig.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\M32COM_CW.runtimeconfig.dev.json
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\M32COM_CW.dll
+C:\Users\Calvin\Documents\GitHub\M32COM_CW\M32COM_CW\bin\Release\netcoreapp2.0\M32COM_CW.pdb
